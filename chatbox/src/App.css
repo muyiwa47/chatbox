@@ -10,8 +10,13 @@ body {
 }
 
 .chat-title .close-icon {
-   position: absolute;
-   right: 0px;
+  position: absolute;
+  right: 0px;
+  width: 25px;
+  height: 25px;
+  background-color: #5126bd;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .chat-title .close-icon img {
@@ -23,6 +28,11 @@ body {
   height: 441px;
   width: 371px;
   position: absolute;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
 }
 
 .chat-input {
@@ -38,6 +48,14 @@ body {
   box-sizing: border-box;
   overflow-y: scroll;
   scroll-behavior: smooth;
+}
+
+.open-chatbox {
+  background-color: rgb(20, 134, 196);
+  color: #ffffff;
+  padding: 5px 25px;
+  border-radius: 5px;
+  border: none;
 }
 
 .serverMessage {
@@ -120,4 +138,15 @@ body {
 #replyBtn img {
   width: 50%;
   height: 50%;
+}
+
+
+.chat-options {
+  list-style-type: none;
+}
+
+.chat-options li {
+   padding: 5px;
+   margin: 5px;
+   color: black;
 }
