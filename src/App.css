@@ -1,0 +1,152 @@
+body {
+  margin: 10px;
+}
+
+.chat-title {
+   height: 25px;
+   background-color: #241056;
+   color: #ffffff;
+   padding-left: 10px;
+}
+
+.chat-title .close-icon {
+  position: absolute;
+  right: 0px;
+  width: 25px;
+  height: 25px;
+  background-color: #5126bd;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.chat-title .close-icon img {
+   padding-right: 10px;
+}
+
+.chat-box {
+  border: solid 1px #949494;
+  height: 441px;
+  width: 371px;
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.chat-input {
+  position: relative;
+  bottom: 6px;
+}
+
+.chat-messages {
+  /* background-color: #f1f1f1; */
+  height: 385px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.open-chatbox {
+  background-color: rgb(20, 134, 196);
+  color: #ffffff;
+  padding: 5px 25px;
+  border-radius: 5px;
+  border: none;
+}
+
+.serverMessage {
+  width: 250px;
+  background-color: #f6f6f6;
+  color: #242424;
+  border-radius: 5px 5px 5px 0px;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 13px;
+  float: left;
+}
+
+.clientMessage {
+  padding: 10px;
+  width: 250px;
+  background-color: #5627d8;
+  font-size: 14px;
+  border-radius: 5px 0px 5px 5px;
+  color: #ffffff;
+  float: right;
+  margin-bottom: 13px;
+}
+
+#msg_send {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #949494;
+  width: 371px;
+  box-sizing: border-box;
+}
+
+
+/* TYping loading */
+
+.loader {
+   text-align: center;    
+   float: right;
+}
+
+.loader span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 20px;
+    animation: loader 0.8s infinite alternate;
+}
+
+.loader span:nth-of-type(2) {
+   animation-delay: 0.2s;
+}
+
+.loader span:nth-of-type(3) {
+   animation-delay: 0.6s;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+}
+
+#replyBtn {
+  float: right;
+  bottom: 32px;
+  margin-right: 5px;
+  position: relative;
+  border: none;
+  background-color: #ffffff;
+}
+
+#replyBtn img {
+  width: 50%;
+  height: 50%;
+}
+
+
+.chat-options {
+  list-style-type: none;
+}
+
+.chat-options li {
+   padding: 5px;
+   margin: 5px;
+   color: black;
+}
